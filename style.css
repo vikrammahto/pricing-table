@@ -1,0 +1,170 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+a{
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+:root {
+  --primary-text: #202526;
+  --bg-dark: #202526;
+  --text-highlight: #FF9642;
+  --text-mute: #5a5656;
+  --text-extra-mute: #968d8d;
+  --clr-light: #fff;
+  --clr-mute: #efefef;
+}
+body {
+	color: var(--primary-text);
+  	background-color: var(--clr-light);
+  	min-height: 100vh;
+}
+.section-header{
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+}
+.section-description{
+	color: var(--text-mute);
+	line-height: normal;
+	text-align: center;
+	margin: 15px 5px;
+}
+.pricing-section{
+	display: flex;
+	flex-direction: column;
+ 	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+.pricing-panel{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 960px;
+	width: 100%;
+}
+.pricing-plan{
+	border: 2px solid var(--clr-mute);
+	border-radius: 2px;
+	padding: 20px;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* flex-wrap: wrap; */
+	max-width: 200px;
+	width: 100%;
+	background-color: var(--clr-light);
+
+}
+.pricing-plan:hover{
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.pricing-header{
+	font-size: 18px;
+	font-weight: bold;
+}
+.pricing-price{
+	padding: 20px 0;
+	font-weight: bold;
+}
+.pricing-amount{
+	font-size: 30px;
+	color: var(--text-highlight);
+}
+.pricing-features{
+	padding: 10px 0;
+ 	border-top: 1px solid var(--clr-mute);
+}
+.pricing-features-item{
+	text-align: left;
+	padding: 8px 0;
+}
+.pricing-button{
+	color: var(--text-highlight);
+	font-weight: 500;
+	padding: 8px 20px;
+	border: 2px solid var(--text-highlight);
+	border-radius: 20px;
+} 
+.pricing-button:hover{
+	color: var(--clr-light);
+	background-color: var(--text-highlight);
+}
+.footer-credit{
+	color: var(--text-extra-mute);
+	text-align: center;
+	margin: 20px 0;
+}
+.download-btn{
+	display: block;
+	color: var(--clr-light);
+	background-color: var(--bg-dark);
+	padding: 10px 20px;
+	border-radius: 30px;
+	margin-top: 30px;
+
+}
+.fas, .fab{
+	color: var(--clr-light);
+}
+.footer-text{
+	margin: 10px 0;
+}
+.footer-text a{
+	color: var(--primary-text);
+	text-decoration: underline;
+}
